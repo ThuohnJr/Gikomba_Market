@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,200;0,500;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+	list-style: none;
+	text-decoration: none;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;
+}
+.top{
+	background-image: url('bamboo.png');
+}
+.intro{
+	font-family: fasthand,cinzel,arial,sans-serif; 
+	background-image: url('https://clipart-library.com/images_k/transparent-bamboo/transparent-bamboo-7.png');
+	text-align: center;
+}
+.intro-title{
+	
+	font-size: 6em;
+} 
+.intro-mantra{
+	font-size: 2em;
+	font-family: cinzel,arial,sans-serif;
+}
+.navbar{
+	display:flex;
+	flex-direction: row;
+	padding: 20px;
+	margin: 20px;
+	justify-content:space-around;
+	position: relative;
+	gap: 40px;
+	font-size: 1.4em;
+	font-family: sans-serif;
+}
+.sports{
+	display: inline-block;
+	position: relative;
+}
+.sports-list{ 
+display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.sports a, .home a,.custom a,.unique a{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sports:hover .sports-list{
+	display: block;
+float: left;
+}
+.sports a:hover,.custom a:hover,.home a:hover,.unique a:hover {;
+background-color: #ffdf00;
+text-decoration: none;
+list-style: none;
+}
+*{
+	text-decoration: none;
+	list-style: none;
+	
+}
+.title{
+	text-align: center;
+	font-size: 1.4em; 
+}
+
+/*football*/
+#football-img{
+	width: 100%;
+}
+.text-top{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.football-top{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	align-items: center;
+}
+.football-top1{
+	width: 50%;
+}
+.football-top2{
+	font-size: 8em;
+	font-family:cinzel,sans-serif;
+	text-align: center;
+	width: 50%;
+}
+.french{
+	margin: 30px 60px 60px 60px;
+	padding: 50px 0;   
+}
+.french1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 40px 0;
+	margin: 40px 0; 
+}
+.french2{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0;
+	margin: 40px 0;
+}
+.french img{
+	width: 100%;
+	height:200px;
+}
+.french img::hover{
+	top:-10px;
+}
+
+.english{
+	margin: 20px 60px 40px 60px;
+	padding: 40px 0;
+}
+.english1{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0;
+	margin: 40px 0;
+	justify-content: space-around; 
+}
+.english2{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0;
+	margin: 40px 0;
+	justify-content:space-around;
+}
+.english img{
+width: 100%;
+height: 200px;
+}
+#promo-img{
+	width: 100%;
+	height: 100%;
+}
+.spanish{
+	margin: 20px 60px 40px 60px;
+	padding: 40px 0;
+}
+.spanish1{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0;
+	margin: 40px 0;
+	justify-content: space-around;
+}
+.spanish2{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0;
+	margin: 40px 0;
+	justify-content: space-around;
+}
+.spanish img{
+	width: 100%;
+	height: 200px;
+}
+.italian{
+	margin: 20px 60px 40px 60px;
+	padding: 40px 0;
+}
+.italian1{
+	display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 40px 0;
+	margin: 40px 0;
+}
+.italian2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+padding: 40px 0;
+	margin: 40px 0;
+}
+.italian img{
+	width: 100%;
+	height: 200px;
+}
+.german{
+margin: 20px 60px 40px 60px;
+	padding: 40px 0;
+}
+.german1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+padding: 40px 0;
+	margin: 40px 0;
+}
+.german2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+padding: 40px 0;
+	margin: 40px 0;
+}
+.german img{
+	width: 100%;
+	height: 200px;
+}
+.btn{
+	  display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin: 10px 40% 0 40%;
+}
+.btn:active{
+	box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1); 
+    transform: translateY(2px);  
+}
+.btn:hover{
+	background-color: orange;
+	color: #ffffff; 
+	transform: scale(1.2);
+}
+
+
+/*Formula1*/
+.f1-logo{
+	display: flex;
+	flex-direction: row;
+	gap:20px;
+	justify-content: center;
+	margin: 0 0 0 0;
+	opacity: 0.9999;
+
+}
+
+#f1-logo{
+	width: 100%;
+
+  
+}
+.f1-title{
+	text-align: center;
+	font-size: 4em;
+	padding: 20px;
+	margin: 0 0 0 0;
+
+}
+#merch-img{
+	width: 100%;
+	height: 300px;
+
+}
+.merch,.merch1,.merch2{
+	display: flex;
+	flex-direction: row;
+	padding: 60px;
+	margin: 60px;
+	gap:20px;
+	scroll-behavior: smooth;
+}
+.merch2{
+	margin: 0;
+}
+#promo-img{
+	width: 100%;
+	margin: -10% 0 0 0 ;
+}
+/*Sports catalogue page*/
+.sports-title{
+	text-align: center;
+	justify-content: center;
+	font-size: 3em;
+	background-color: gold;
+	padding: 20px;
+	width: 100%;
+
+}
+.sports-menu{
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	margin: 30px;
+	gap: 30px;
+}
+#sports-img{
+	width: 100%;
+	height: 300px;
+
+}
+#sports-img:hover{
+	
+	
+}
+
+.btn1 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  margin: 10px 40% 0 40%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn1:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/*MotoGp*/
+#mgp-logo{
+	width: 70%;
+	padding: 20px;
+	flex-basis: 50%;
+}
+#mgp-logo1{
+	width: 100%;
+	justify-content: flex-start;
+}
+.mgp-logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+padding: 60px;
+}
+.mgp-apparel{
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	margin: 30px;
+	justify-content: center;
+	gap: 30px;
+}
+#mgp-apparel-img{
+	width: 100%; 
+	height: 350px;
+}
+
+/*Rugby*/
+#rugby-img{
+	width: 100%;
+
+}
+.rugby-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+}
+.rugby-top-1{
+	width: 50%;
+}
+.rugby-top-2{
+	width: 50%;
+	align-content: center;
+}
+.rugby-title{
+	font-size: 9em;
+	font-family: cinzel,sans-serif;
+	text-align: center;
+	align-items: center;
+}
+
+/*Athletics*/
+.athletics-top{
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	align-items: center;
+}
+.athletics-top1{
+	width: 50%;
+	align-items: center;
+}
+#athletics-img{
+	width: 100%;
+}
+.athletics-top2{
+	width: 50%;
+	align-items: center;
+	font-size: 7em;
+	font-family: cinzel,sans-serif;
+	text-align: center;
+}
+
+
+/*hockey-top*/
+.hockey-top{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.hockey-top1{
+	width: 50%;
+	align-items: center;
+}
+#hockey-img{
+	width: 100%;
+}
+.hockey-top2{
+	width: 50%;
+	align-items: center;
+	text-align: center;
+	font-family: cinzel,sans-serif;
+	font-size: 7em;
+}
+
+
+/*tennis-top*/
+.tennis-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+
+}
+.tennis-top1{
+	width: 50%;
+	align-items: center;
+}
+#tennis-img{
+	width: 100%;
+}
+.tennis-top2{
+	width: 50%;
+	align-items: center;
+	text-align: center;
+	font-size: 7em;
+	font-family: cinzel,sans-serif;
+}
+
+
+/*Basketball*/
+.basketball-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+.basketball-top1{
+	align-items: center;
+	width: 50%;
+}
+#basketball-img{
+	width: 100%;
+}
+.basketball-top2{
+	align-items: center;
+	width: 50%;
+	font-size: 7em;
+	text-align: center;
+	font-family: cinzel,sans-serif;
+}
+
+/*Netball*/
+.netball-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+.netball-top1{
+	width:50%;
+	align-items: center;
+}
+#netball-img{
+	width: 100%;
+
+}
+.netball-top2{
+	text-align: center;
+	align-items: center;
+	width: 50%;
+	font-size: 7em;
+	font-family: cinzel,sans-serif;
+}
+
+/*handball*/
+.handball-top{
+	display: flex;\
+	flex-direction: row;
+	align-items: center;
+
+}
+.handball-top1{
+	width: 50%;
+	align-items: center;
+}
+#handball-img{
+	width: 100%;
+}
+.handball-top2{
+	width: 50%;
+	align-items: center;
+	text-align: center;
+	font-size: 7em;
+	font-family: cinzel,sans-serif;
+}
+
+/*Golf*/
+.golf-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.golf-top1{
+	width: 50%;
+align-items: center;
+}
+#golf-img{
+	width: 100%; 
+}
+.golf-top2{
+text-align: center;
+align-items: center;
+width: 50%;
+font-size: 7em;
+font-family: cinzel,sans-serif;
+}
+
+/*Volleyball*/
+.volley-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.volley-top1{
+	width: 50%;
+	align-items: center;
+	text-align: center;
+}
+#volley-img{
+	width: 100%;
+}
+.volley-top2{
+	width: 50%;
+	align-items: center;
+	text-align: center;
+	font-size: 7em;
+	font-family: cinzel,sans-serif;
+}
