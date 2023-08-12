@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 *{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 }
 a{
 	list-style: none;
@@ -20,25 +23,34 @@ html{
 	padding: 0;
 }
 
-
-.title1{
-
+.logo{
+	background-color:  #FF6EC7;
+	margin: 0;
+	height: 250px;
+}
+.main-title{
 text-align: center;
-background-color:  #FF6EC7;
 padding-bottom: 10px;
 padding:20px;
 font-size: 6em;
 margin-top: 0;
 }
-
+.mantra{
+	font-size: 1.5em;
+	text-align: center;
+}
+.navigation > button{
+	padding: 10px;
+}
 .navi-bar{
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	margin:30px;
+	margin:20px;
 	padding: 30px;
 	gap:20px;
 	justify-content: flex-end; 
+	width: 100%;
 	}
 .catalogue, .fashion{
 	display:inline-block;
@@ -82,7 +94,10 @@ a{
 	list-style: none;
 	text-decoration: none;
 }
-
+a:hover{
+	list-style: none;
+	text-decoration: none; 
+}
  
 *li {
 	list-style: none;
@@ -94,6 +109,17 @@ a{
 	text-decoration: none;
 	text-align: center;
 	justify-content: center;
+}
+@media(max-width:360px){
+	.main-title{
+		font-size: 2em;
+	}
+	.mantra{
+		font-size: 1.2em;
+	}
+	.logo{
+		height:200px;
+	}
 }
 /*catalogue page*/
 	
@@ -128,11 +154,13 @@ a{
 .btn1:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
+
+/*Main-page*/
 .products{
 	display:flex;
 	flex-direction: row;
 	padding:20px;
-	margin:20px;
+	margin:13px;
 justify-content: center;
 gap: 20px;
 }
@@ -147,12 +175,133 @@ width: 100%;
 height: 350px;
 
 }
-.btn{
-	display: flex;
-	padding:auto;
-	justify-content: center;
-	margin: 0% 40% 0% 40%;
+
+@media(max-width:360px){
+	.products{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 3px;
+	}
 }
+
+/*Shoes page*/
+.shoes1{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	padding: 30px; 
+	margin: 40px;
+
+}
+.shoes1 > div{
+	border-bottom: 1px groove #ddd;
+	padding: 10px;
+}
+#shoes-img{
+	width: 100%;
+	height: 300px;
+}
+@media(max-width:360px){
+	.shoes1{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding:5px;
+		margin: 5px;
+		margin-bottom: 10px;
+
+	}
+	.shoes1 > div{
+		border-bottom: 1px groove #ddd;
+		padding: 3px;
+	}
+}
+
+/*athletic-img*/
+.athletic-products{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 40px;
+	margin: 30px;
+}
+.athletic-products > div{
+border-bottom: #ddd groove 1px;
+padding: 10px;
+}
+
+#athletic-img{
+	width: 100%;
+	height: 300px;
+}
+@media(max-width:360px){
+	.athletic-products{
+		display: flex;
+		flex-direction:column;
+		gap:5px;
+		padding: 3px;
+		margin: 5px; 
+	}
+
+	#athletic-img{
+		width: 100%;
+		height: 300px;
+	} 
+}
+/*bedroom products*/
+.bedroom-products{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	padding: 20px;
+	margin: 30px;
+
+}
+#bedroom-img{
+	width: 100%;
+	height: 300px;
+}
+@media(max-width:360px{
+
+}
+/*Baby-products*/
+.baby-products{
+	display: flex;
+	flex-direction: row;
+	gap:20px;
+	padding: 20px;
+	margin: 30px; 
+	
+}
+.baby-products > div{
+	border-bottom: 1px #ddd groove;
+} 
+#baby-img{
+	width: 1%;
+	height: 300px;
+
+
+}
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .boundary{
@@ -191,191 +340,9 @@ text-decoration: none;
  	list-style: none;
  	text-decoration: none;
  }
-/*jerseys*/
-.french{
-
-}
 
 
 
-/*shoes-page*/
-.shoes-rack1{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr;
-padding:20px;
-margin: 20px;
-justify-content: center;
-align-items: center;
- 
-}
-.office-shoes{
-	grid-column: 1/2;
-	
-}
-.casual-shoes{
-	grid-column: 2/3;
-		
-}
-.sporty-shoes{
-	grid-column:3/4 ;
-		
-}
-.school-shoes{
-	grid-column:4/5 ;
-}
-
-.shoes-rack2{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
-	padding:20px;
-	margin: 60px;
-	justify-content: center;
-	align-items: center;
-	 
-}
-.cleats-shoes{
-	grid-column:1/2; 
-}
-.baby-shoes{
-grid-column:2/3; 
-}
-.safety-shoes{
-grid-column:3/4 ;
-}
-.stylish-shoes{
-grid-column:4/5 ;
-}
-.bungu-charity{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 1fr;
-	background-color: #eeff05;
-	grid-gap: 5px; 
-	padding: 30px;
-	margin: 40px;
-}
-.charity-pic{
-	grid-column: 1/7;
-}
-.charity-form{
-	grid-column:7/13;
-	display: flex;
-	flex-direction: column;
-}
-
-.form{
-	box-sizing: border-box;
-	filter:  brightness(100%);
-
-}
-.form-intro-title{
-text-align: center;
-font-size: 2em;
-font-family: monospace;
-}
-.form-intro-text{
-	text-align: center;
-	font-size: 1.4em;
-	font-family: arial;
-
-}
-#charity-img{
-width: 100%;
-}
-.actual-form{
-	background-image: url(https://drandreapurcell.com/wp-content/uploads/2017/01/sign-up-button.jpg);
-	   background-repeat: no-repeat;
-        background-attachment: relative;
-        background-position: center;
-}
-.borderline{
-	margin: fit-content;
-	padding: auto;
-}
-.charity-form{
-	display: grid
-}
-#firstName{
-	display: flex;
-	width: 100%;
-}
-
-.shoes-rack3{
-display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 1fr;
-	padding:60px;
-	margin: 60px;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 10px;
-}
-.sandals-shoes{
-	grid-column: 4/5;
-	border: 1px #001000 groove;
-}
-
-.official-shoes,.casual-shoe,.sporty,.cleats,.school,.baby,.safety,.stylish,.sandals{
-	text-align: center;
-	font-size: 1.3em;
-	font-weight: 400;
-}
-#shoes-img{
-	width: 100%;
-	height: 300px;
-}
-.intro{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-padding: 20px 20px 20px 20px;
-margin: 0px 20px 30px 30px;
-background-color: coral;
-font-size: 5em;
-}
-
-/*athletic page*/
-.title-athletic{
-	font-size:1.5em ;
-	font-family: fira-sans,sans-serif;
-text-align: center;
-background-color:pink;
-
-}
-.title-athletic h1{
-	font-size: 2.5em;
-	padding: 20px;
-	margin-left: 0;
-	margin: 0;
-}
- 
-.athletic-products{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
-	grid-gap: 5px;
-	padding:10px;
-}
-.jerseys{
-	grid-column: 1/2;
-}
-.shorts{
-	grid-column: 2/3;
-}
-.socks{
-	grid-column: 3/4;
-}
-.tracksuits{
-	grid-column: 4/5;
-}
-.athletic-products1{
-	display: flex;
-	flex-direction: row;
-	padding: 20px 30px 70px 30px;
-
-}
 
 .promo{
 	text-align: center;
@@ -398,10 +365,7 @@ background-color:pink;
 	list-style: none;
 	
 }
-*a{
-	text-decoration: none;
-	list-style: none;
-}
+
 .visit:hover{
 transform: scale(1.4);
 text-decoration: none;
@@ -429,25 +393,8 @@ list-style: none;
 	width: 100%;
 	height: 300px;
 }
-.athletic-products2{
-   display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
-	grid-gap: 5px;
-	padding: 20px 30px 70px 30px;
-}
-.jump-rope{
-	grid-column:1/2;
-}
-.stretch-bands{
-grid-column: 2/3;
-}
-.home-weights{
-grid-column: 3/4;
-}
-.sport-bras{
-grid-column: 4/5;
-}
+
+
 #promo-blink{
 	color:red;
 animation: blinker 1s ease infinite;
@@ -472,25 +419,3 @@ animation: blinker 1s ease infinite;
 
 
 
-
- /*bedroom page*/
-.title-bedroom{
-font-size:3.4em ;
-text-align: center;
-background-color:pink;
-padding-bottom: 10px;
-
-                }
-.bedroom-products,.bedroom-produts1{
-display: flex;
-flex-direction: row;
-padding: 40px;
-margin: 30px;
-justify-content: space-evenly;
-align-items: center;
-}
-
-#bedroom-img{
-	width: 100%;
-	height: 350px;
-}
