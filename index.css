@@ -27,6 +27,16 @@ html{
 	background-color:  #FF6EC7;
 	margin: 0;
 	height: 250px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+	margin-top: 0;
+}
+#logo-img{
+	width: 25%;
+		float: left;
+	margin: -100px;
+margin-left: 1px;
 }
 .main-title{
 text-align: center;
@@ -283,9 +293,47 @@ padding: 10px;
 
 
 }
-.
 
+@media(max-width:360px){
+	.baby-products{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 3px;
+		margin: 3px;
 
+	}
+}
+
+/*baby products*/
+.bags-products{
+	display: flex;
+	flex-direction: row; 
+	gap: 20px;
+	padding: 20px;
+	margin: 30px;
+}
+.bags-products1{
+	display: flex;
+	flex-direction: row; 
+}
+.bags-products > div{
+	border-bottom: #ddd 1px groove;
+	padding: 10px;
+}
+#bags-img{
+	width: 100%;
+	height: 300px;
+}
+@media(max-width:360px){
+	.bags-products{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 3px;
+		margin: 3px;
+	}
+}
 
 
 
