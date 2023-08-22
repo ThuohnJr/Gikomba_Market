@@ -6,7 +6,7 @@
 	-webkit-box-sizing:border-box;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 }
 a{
 	list-style: none;
@@ -22,26 +22,42 @@ html{
 	margin: 0;
 	padding: 0;
 }
-
-.logo{
-	background-color:  #FF6EC7;
+body{
 	margin: 0;
-	height: 250px;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+.top{
 	display: flex;
 	flex-direction: column;
+	background-color:  #FF6EC7;
+	margin: 0;
+	height: 320px;
+}
+.top1{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+.logo{
+	
+	display: flex;
+	flex-direction: row;
 	flex: 1 1 0;
 	margin-top: 0;
+
 }
 #logo-img{
-	width: 25%;
+	width: 100%;
 		float: left;
-	margin: -100px;
-margin-left: 1px;
+	margin: -200px;
+margin-left: 1px; 
 }
 .main-title{
 text-align: center;
-padding-bottom: 10px;
-padding:20px;
+padding:10px;
 font-size: 6em;
 margin-top: 0;
 }
@@ -120,7 +136,7 @@ a:hover{
 	text-align: center;
 	justify-content: center;
 }
-@media(max-width:360px){
+@media(max-width:600px){
 	.main-title{
 		font-size: 2em;
 	}
@@ -156,9 +172,9 @@ a:hover{
   transition: box-shadow .2s,-webkit-box-shadow .2s;
   white-space: nowrap;
   border: 0;
+  -webkit-user-select:none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  touch-action: manipulation; 
 }
 
 .btn1:hover {
@@ -186,7 +202,7 @@ height: 350px;
 
 }
 
-@media(max-width:360px){
+@media(max-width:600px){
 	.products{
 		display: flex;
 		flex-direction: column;
@@ -200,8 +216,8 @@ height: 350px;
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
-	padding: 30px; 
-	margin: 40px;
+	padding: 20px; 
+	margin: 20px;
 
 }
 .shoes1 > div{
@@ -288,9 +304,8 @@ padding: 10px;
 	border-bottom: 1px #ddd groove;
 } 
 #baby-img{
-	width: 1%;
-	height: 300px;
-
+	width: 10%;
+	height: 10%;
 
 }
 
