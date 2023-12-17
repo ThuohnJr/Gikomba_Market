@@ -90,20 +90,9 @@ list-style: none;
 }
 .title{
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.4rem;
 }
-@media(max-width:320px) {
-	.navbar{
-		padding:0;
-		margin:0;
-		justify-content: center;
-		gap:5px;
-	}
 
-	img{
-		width: 100vw;
-	}
-}
 
 form {
   background-color: #e4d00a;
@@ -158,11 +147,40 @@ svg {
   }
 }
 
+/*sale-main page*/
+.sale-title > h2 {
+	color: orange;
+	text-align: center;
+}
+.sale-title > p > span{
+	color: red;
+}
+.sale1{
+	display: flex;
+	padding:40px;
+	justify-content: center;
 
-
+}
+.cost-tag{
+	font-size: 1.3rem;
+	text-align: center;
+}
+#sale-img{
+	width:100%;
+	height:350px;
+}
+@media(max-width:400px){
+	.sale1{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		margin:3px;
+	}
+}
 /*football*/
 #football-img{
 	width: 100%;
+	border-radius: 10px;
 }
 .text-top{
 	justify-content: center;
@@ -179,10 +197,15 @@ svg {
 	width: 50%;
 }
 .football-top2{
-	font-size: 8em;
+	font-size: 8rem;
 	font-family:cinzel,sans-serif;
 	text-align: center;
 	width: 50%;
+}
+@media(max-width:400px){
+	.football-top2{
+		font-size: 3rem;
+	}
 }
 .french{
 	margin: 30px 60px 60px 60px;
@@ -388,10 +411,7 @@ padding: 40px 0;
 	padding:10px;
 
 }
-#sports-img:hover{
 
-
-}
 @media(max-width:599px) {
 .sports-title{
 	display: flex;
@@ -402,10 +422,7 @@ padding: 40px 0;
 	flex-direction: column;
 
 }
-.sports-menu > div{
-	border-bottom: 1px groove gray;
-	padding:5px;
-}
+
 .btn1{
 	padding: 10px;
 }
@@ -482,7 +499,7 @@ border-radius: 15px;
 	align-content: center;
 }
 .rugby-title{
-	font-size: 9em;
+	font-size: 9rem;
 	font-family: cinzel,sans-serif;
 	text-align: center;
 	align-items: center;
@@ -498,6 +515,19 @@ gap:10px;
 #rugby-img{
 width: 100%;
 height: 300px;
+}
+@media(max-width:400px) {
+.rugby-title{
+	font-size: 4rem;
+	margin-bottom: 10px;
+	}
+	.rugby-apparel{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		margin: 3px;
+		gap:4px;
+	}
 }
 /*Athletics*/
 .athletics-top{
