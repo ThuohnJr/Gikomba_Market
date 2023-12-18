@@ -358,6 +358,7 @@ padding: 40px 0;
 
 #f1-logo{
 	width: 100%;
+	border-radius: 10px;
 }
 
 .f1-title{
@@ -542,6 +543,7 @@ height: 300px;
 }
 #athletics-img{
 	width: 100%;
+	border-radius: 10px;
 }
 .athletics-top2{
 	width: 50%;
@@ -550,8 +552,12 @@ height: 300px;
 	font-family: cinzel,sans-serif;
 	text-align: center;
 }
+@media(max-width:400px){
+.athletics-top2{
+	font-size: 3rem;
+}
 
-
+}
 /*hockey-top*/
 .hockey-top{
 display: flex;
@@ -564,15 +570,20 @@ align-items: center;
 }
 #hockey-img{
 	width: 100%;
+	border-radius: 10px;
 }
 .hockey-top2{
 	width: 50%;
 	align-items: center;
 	text-align: center;
 	font-family: cinzel,sans-serif;
-	font-size: 7em;
+	font-size: 7rem;
 }
-
+@media(max-width:400px) {
+.hockey-top2{
+	font-size: 3rem;
+}
+}
 
 /*tennis-top*/
 .tennis-top{
